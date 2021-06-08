@@ -8,7 +8,7 @@ import useInitialState from '@hooks/useInitialState';
 import { hot } from 'react-hot-loader/root';
 
 const AsyncCheckoutContainer = React.lazy(() => {
-  import('@containers/Checkout');
+  return import('@containers/Checkout');
 });
 
 const App = () => {
